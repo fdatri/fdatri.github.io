@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I² in Random Effects Meta-Analysis: Visualizing What Happens When Increasing the Sample Size"
+title: "I² in random effects meta-analysis: what happens when increasing the sample size?"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
