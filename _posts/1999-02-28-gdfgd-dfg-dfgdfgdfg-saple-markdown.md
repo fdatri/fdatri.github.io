@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample blog pst to learn markdown tips
+title: Sampppple blog pst to learn markdown tips
 subtitle: There's lots to learn!
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
