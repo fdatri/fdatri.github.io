@@ -4,6 +4,7 @@ title: Flake it till you make it
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
+comments: true
 tags: [books, test]
 author: Shaslo Ictvaine
 ---
