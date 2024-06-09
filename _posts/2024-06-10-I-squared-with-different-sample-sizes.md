@@ -16,7 +16,7 @@ As explained by Borenstein (2020), the definition of **$I^2$** implies that effe
 
 
 ## Our example
-The setting we'll be using is the following: a treatment with true effects, measured in terms of the standardized difference between *treatment* and *control* (*Cohen's d*), following a distribution with a mean of $1$ and a standard deviation of $0.1$. The total number of subjects, **$N$** will be kept almost constant, in particular in our setup, we will use 200,000 subjects:  
+The setting we'll be using is the following: a treatment with true effects, measured in terms of the standardized difference between *treatment* and *control* (*Cohen's d*), following a distribution with mean  $1$ and  standard deviation $0.1$. The total number of subjects, **$N$** will be kept almost constant, in particular in our setup, we will use 200,000 subjects:  
 ```r
 # Setting parameters
 N <- 200000
