@@ -73,7 +73,7 @@ Following an approach where data are simulated for each subject, and for each sa
 *Yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000.*
 
 
-Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25 $ (first yellow dot on the left), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.  
+Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25$ (first yellow dot on the left), but apart from this, the two values look very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) you can find the full code for this simulation.  
 If, instead of estimating the correlation between *treatment* and *control* for each different study, in order to to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:  
 
 ![I² Formula true cor](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
@@ -83,7 +83,7 @@ Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is be
 
 ## So, how can we interpet heterogeneity?
 
-In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this could be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This indicates that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of $\pm 0.196$ around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should apply to Cohen's *d*, where the usual cutoffs are often interpreted in a mindless manner.
+In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this could be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This indicates that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of $\pm 19.6%$ around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should apply to Cohen's *d*, where the usual cutoffs are often interpreted in a mindless manner.
 
 
 
