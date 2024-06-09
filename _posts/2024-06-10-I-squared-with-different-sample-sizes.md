@@ -70,7 +70,8 @@ Following an approach where data are simulated for each subject, and for each sa
 
 ![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)
 
-Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $\ n = 25 \$, but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation. If, instead of estimating the correlation between *treatment* and *control* for each different study to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:  
+Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $\ n = 25 \$ (first yellow dot on the left), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.  
+If, instead of estimating the correlation between *treatment* and *control* for each different study, in order to to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:  
 
 ![I² Formula true cor](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
 
