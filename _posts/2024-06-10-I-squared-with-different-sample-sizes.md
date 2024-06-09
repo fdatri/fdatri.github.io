@@ -66,11 +66,14 @@ If we plot our data we obtain:
 
 We can see how, even if our effect sizes have relatively low variability and our total subject count remains almost constant, with larger sample sizes, $I²$ approaches 100%. 
 
-Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package, we arrive at the following plot (yellow dots represent $I²$ values obtained for different sample sizes ranging from 25 to 10,000:
+Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package, we arrive at the following plot (yellow dots represent $I²$ values obtained for different sample sizes ranging from 25 to 10,000):
 
-![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)
+![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)  
 
-Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $\ n = 25 \$ (first yellow dot on the left), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.  
+*Yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000.*
+
+
+Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25 $ (first yellow dot on the left), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.  
 If, instead of estimating the correlation between *treatment* and *control* for each different study, in order to to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:  
 
 ![I² Formula true cor](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
