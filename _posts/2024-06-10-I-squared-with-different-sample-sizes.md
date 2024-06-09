@@ -9,7 +9,7 @@ mathjax: true
 author: Federico D'Atri
 ---
 
-The **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity (Viechtbauer, 2022). I suspect that this misunderstanding arises from the willingness to adopt an index with identifiable cutoffs. No matter the set of studies you have, you can measure **$I^2$**, and it will always be a value between 0 and 100%. Conversely, it is impossible to provide predefined cutoffs for $\tau$, since its absolute value depends on the measurement scale being used. For instance, a $\tau$ of 0.4 could indicate a high amount of heterogeneity for a relative risk (RR) of mortality with a mean effect of the treatment at $0.95$, or it could be considered an indicator of extremely low heterogeneity if we have a mean effect for an educational protocol on an increase in salary expressed as a percentage of 50%.
+The **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity (Viechtbauer, 2022). I suspect that this misunderstanding arises from the willingness to adopt an index with identifiable cutoffs. No matter the set of studies you have, you can measure **$I^2$**, and it will always be a value between 0 and 100%. Conversely, it is impossible to provide predefined cutoffs for $\tau$, since its absolute value depends on the measurement scale being used. For instance, a $\tau$ of 0.4 could indicate a high amount of heterogeneity for a relative risk $(RR)$ of mortality with a mean effect of the treatment at $0.95$, or it could be considered an indicator of extremely low heterogeneity if we have a mean effect for an educational protocol on an increase in salary expressed as a percentage of 50%.
 
 As explained by Borenstein (2020), the definition of **$I^2$** implies that effects with different amounts of heterogeneity can yield the same **$I^2$** index. Moreover, if an effect has a certain amount of true heterogeneity, increasing the sample size of individual studies indefinitely, while keeping the total number of subjects constant across all studies, reduces the proportion of total variance accounted for by sampling error, making **$I^2$** tend towards 100%. In this post, we will have a look, both using the **$I^2$** formula and simulation, at how this index increases as the sample size of individual studies in a meta-analysis increases.
 
@@ -83,12 +83,16 @@ Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is be
 
 ## Conclusions: Interpreting Heterogeneity
 
-In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this could be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This indicates that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of $\pm 19.6$% around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should apply to Cohen's *d*, where the usual cutoffs are often interpreted in a mindless manner.
+In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this could be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This indicates that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of ±19.6% around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should apply to Cohen's *d*, where the usual cutoffs are often interpreted in a mindless manner.
 
 
 
 ## References
-Borenstein, M. (2020). Research Note: In a meta-analysis, the I² index does not tell us how much the effect size varies across studies. Journal of Physiotherapy, 66(2), 135-139.
+Borenstein, M. (2020). Research Note: In a meta-analysis, the I² index does not tell us how much the effect size varies across studies. *Journal of Physiotherapy*, 66(2), 135-139.
+
+Borenstein, M., Cooper, H., Hedges, L., & Valentine, J. (2009). Effect sizes for continuous data. *The handbook of research synthesis and meta-analysis*, 2, 221-235.
+
+Viechtbauer, W. [Metafor Project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate): Useful resources for computing $I^2$ in more complex models.
 
 
 
