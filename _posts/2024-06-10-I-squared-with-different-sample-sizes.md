@@ -59,8 +59,10 @@ for (n in seq(5, 10000, by = 5)) {
   I2_data <- rbind(I2_data, data.frame(n = n, m = m, I2 = I2_value)) 
 }
 ```
-If we plot our data we obtain:
-![I² Formula Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2_formula_plot.png?raw=true)
+If we plot our data we obtain:  
+
+![I² Formula Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
+
 
 
 ## References
