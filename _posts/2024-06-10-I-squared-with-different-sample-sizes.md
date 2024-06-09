@@ -9,9 +9,9 @@ mathjax: true
 author: Federico D'Atri
 ---
 
-The **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity (Viechtbauer, 2022). As explained by Borenstein (2020), this definition implies that effects with different amounts of heterogeneity can yield the same **$I^2$** index. Moreover, if an effect has a certain amount of true heterogeneity, increasing the sample size of individual studies indefinitely, while keeping the total number of subjects constant across all studies, reduces the proportion of total variance accounted for by sampling error, making **$I^2$** tend towards 100%. 
-  
-In this post, we will have a look, both using the **$I^2$** formula and simulation, at how this index increases as the sample size of individual studies in a meta-analysis increases.
+The **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity (Viechtbauer, 2022). I suspect that this misunderstanding arises from the willingness to adopt an index with identifiable cutoffs. No matter the set of studies you have, you can measure **$I^2$**, and it will always be a value between 0 and 100%. Conversely, it is impossible to provide predefined cutoffs for $\tau^2$, since its absolute value depends on the measurement scale being used. For instance, a $\tau$ of 0.4 could indicate a high amount of heterogeneity for a relative risk (RR) of mortality with a mean effect of the treatment at $0.95$, or it could be considered an indicator of extremely low heterogeneity if we have a mean effect for an educational protocol on an increase in salary expressed as a percentage of 50%.
+
+As explained by Borenstein (2020), the definition of **$I^2$** implies that effects with different amounts of heterogeneity can yield the same **$I^2$** index. Moreover, if an effect has a certain amount of true heterogeneity, increasing the sample size of individual studies indefinitely, while keeping the total number of subjects constant across all studies, reduces the proportion of total variance accounted for by sampling error, making **$I^2$** tend towards 100%. In this post, we will have a look, both using the **$I^2$** formula and simulation, at how this index increases as the sample size of individual studies in a meta-analysis increases.
 
 
 
@@ -64,13 +64,22 @@ If we plot our data we obtain:
 ![I² Formula Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
 
 
-We can see how, even if our effect sizes have relatively low variability and our total subject count remains quite constant, with larger sample sizes, I² approaches 100%.
+We can see how, even if our effect sizes have relatively low variability and our total subject count remains almost constant, with larger sample sizes, $I²$ approaches 100%. 
 
-Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package leads to the following result (yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000:
+Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package, we arrive at the following plot (yellow dots represent $I²$ values obtained for different sample sizes ranging from 25 to 10,000:
 
-![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulaion%20plot.png)
+![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)
 
-Interestingly, the values obtained via simulation and model fitting seem to overestimate I² for \( n = 25 \), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.
+Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $\ n = 25 \$, but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation. If, instead of estimating the correlation between *treatment* and *control* for each different study to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:  
+
+![I² Formula true cor](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
+
+Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is being overestimated at $0.16$, I suspect that the $\textit{Var}(d)$ formula I used is biased for small samples and, in this instance, is underestimating the sampling variance. Perhaps someone can suggest why this happens in the comments.
+
+
+## So, how can we interpet heterogeneity?
+
+I suspect that the misuandert
 
 
 
