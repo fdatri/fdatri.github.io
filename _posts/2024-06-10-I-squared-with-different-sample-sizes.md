@@ -64,6 +64,16 @@ If we plot our data we obtain:
 ![I² Formula Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
 
 
+We can see how, even if our effect sizes have relatively low variability and our total subject count remains quite constant, with larger sample sizes, I² approaches 100%.
+
+Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package leads to the following result (yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000:
+
+![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulaion%20plot.png)
+
+Interestingly, the values obtained via simulation and model fitting seem to overestimate I² for \( n = 25 \), but apart from this, they are very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) is the full code for this simulation.
+
+
+
 
 ## References
 Borenstein, M. (2020). Research Note: In a meta-analysis, the I² index does not tell us how much the effect size varies across studies. Journal of Physiotherapy, 66(2), 135-139.
