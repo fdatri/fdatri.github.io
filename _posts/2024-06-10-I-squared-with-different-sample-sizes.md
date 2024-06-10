@@ -61,22 +61,22 @@ for (n in seq(5, 10000, by = 5)) {
 ```
 If we plot our data we obtain:  
 
-![I² Formula Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
+![I² Formula Plot](https://github.com/fdatri/Blog-Material/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
 
 
 We can see how, even if our effect sizes have relatively low variability and our total subject count remains almost constant, with larger sample sizes, $I²$ approaches 100%. 
 
 Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package, we arrive at the following plot (yellow dots represent $I²$ values obtained for different sample sizes ranging from 25 to 10,000):
 
-![I² Formula vs. Simulation Plot](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)  
+![I² Formula vs. Simulation Plot](https://github.com/fdatri/Blog-Material/I2-and-sample-size/blob/main/I2%20formula%20vs.%20simulation%20plot.png)  
 
 *Yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000.*
 
 
-Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25$ (first yellow dot on the left), but apart from this, the two values look very close. [Here](https://github.com/fdatri/I2-and-sample-size/blob/main/simulation_I_squared.R) you can find the full code for this simulation.  
+Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25$ (first yellow dot on the left), but apart from this, the two values look very close. [Here](https://github.com/fdatri/Blog-Material/I2-and-sample-size/blob/main/simulation_I_squared.R) you can find the full code for this simulation.  
 If, instead of estimating the correlation between *treatment* and *control* for each study to calculate the variance of each effect size, we set it to its true value of 0.5, this discrepancy seems to disappear:
 
-![I² Formula true cor](https://github.com/fdatri/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
+![I² Formula true cor](https://github.com/fdatri/Blog-Material/I2-and-sample-size/blob/main/I2%20true%20cor.png)  
 
 Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is being overestimated at $0.16$, I suspect that the $\textit{Var}(d)$ formula I used is biased for small samples and, in this instance, is underestimating the sampling variance. Perhaps someone can suggest why this happens in the comments.
 
