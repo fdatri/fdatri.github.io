@@ -67,7 +67,7 @@ We can see how, even if our effect sizes have relatively low variability and our
 
 Following an approach where data are simulated for each subject, and for each sample size a random effects model is fitted using the *metafor* package, we arrive at the following plot (yellow dots represent $I²$ values obtained for different sample sizes ranging from 25 to 10,000):
 
-![I² Formula vs. Simulation Plot](https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20formula%20vs.%20simulation%20plot.png)  
+<img src="https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20formula%20vs.%20simulation%20plot.png?raw=true" alt="I² Formula vs. Simulation Plot">
 
 *Yellow dots represent I² values obtained for different sample sizes ranging from 25 to 10,000.*
 
