@@ -12,7 +12,7 @@ The **$I^2$** statistic is often misunderstood as an absolute measure of heterog
 
 
 $$
-\mathrm{\%} 100 \cdot \frac{\tilde{\tau}^2}{\tilde{\tau}^2 + \tilde{v}^2}
+100\mathrm{\%} \cdot \frac{\tilde{\tau}^2}{\tilde{\tau}^2 + \tilde{v}^2}
 $$
 
 I suspect that this misunderstanding arises from the willingness to adopt an index with identifiable cutoffs. No matter the set of studies you have, you can measure **$I^2$**, and it will always be a value between 0 and 100%. Conversely, it is impossible to provide predefined cutoffs for $\tau$, since its absolute value depends on the measurement scale being used. For instance, a $\tau$ of $0.4$ could indicate a high amount of heterogeneity for a relative risk $(RR)$ of mortality with a mean effect of the treatment at $0.95$, or it could be considered an indicator of extremely low heterogeneity if we have a mean effect for an educational protocol on an increase in salary expressed as a percentage of 50%.
