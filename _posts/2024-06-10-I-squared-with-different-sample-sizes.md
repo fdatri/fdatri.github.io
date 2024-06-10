@@ -48,7 +48,7 @@ We make the sample size of each study, **$n$**, vary from 5 to 10,000, while cal
 I2 <- function(v, tau2) {
   wi <- 1 / v
   m <- length(v)  
-  v_tilde <- (m * sum(wi)) / (sum(wi)^2 - sum(wi^2))  # Calculate estimated sampling variance
+  v_tilde <- ((m-1) * sum(wi)) / (sum(wi)^2 - sum(wi^2))  # Calculate estimated sampling variance
   return(100 * (tau2 / (tau2 + v_tilde)))  
 }
 
