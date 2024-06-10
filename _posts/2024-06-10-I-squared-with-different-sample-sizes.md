@@ -61,7 +61,7 @@ for (n in seq(5, 10000, by = 5)) {
 ```
 If we plot our data we obtain:  
 
-![I² Formula Plot](https://github.com/fdatri/Blog-Material/I2-and-sample-size/blob/main/I2%20formula%20plot.png?raw=true)
+![I² Formula Plot](https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20formula%20plot.png)
 
 
 We can see how, even if our effect sizes have relatively low variability and our total subject count remains almost constant, with larger sample sizes, $I²$ approaches 100%. 
