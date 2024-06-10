@@ -92,7 +92,7 @@ Borenstein, M. (2020). Research Note: In a meta-analysis, the I² index does not
 
 Borenstein, M., Cooper, H., Hedges, L., & Valentine, J. (2009). Effect sizes for continuous data. *The handbook of research synthesis and meta-analysis*, 2, 221-235.
 
-Viechtbauer, W. [Metafor Project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate): Useful resource for computing $I^2$ in more complex models.
+Viechtbauer, W. [metafor project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate): Useful resource for computing $I^2$ in more complex models.
 
 
 
