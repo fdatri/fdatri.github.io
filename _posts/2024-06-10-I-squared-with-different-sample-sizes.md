@@ -103,7 +103,4 @@ Borenstein, M., Cooper, H., Hedges, L., & Valentine, J. (2009). Effect sizes for
 Viechtbauer, W. [metafor project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate): Useful resource for computing $I^2$ in more complex models.
 
 
-{% if page.comments %}
-  {% include staticman-comments.html %}
-{% endif %}
 
