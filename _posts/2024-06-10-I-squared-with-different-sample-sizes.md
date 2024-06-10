@@ -83,7 +83,8 @@ Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is be
 
 ## Conclusions: Interpreting Heterogeneity
 
-In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this could be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This indicates that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of ±19.6% around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should apply to Cohen's *d*, where the usual cutoffs are often interpreted in a mindless manner.
+In our example, we have a $\tau$ of 0.1 with a mean effect of 1; this can be interpreted as the effect of the treatment varying with a standard deviation of 10% relative to its absolute value. This also means that the true negative effects are almost 0%, and that 95% of the true effects are expected to lie within an interval of ±19.6% around the mean effect size. Without further context, I would say that this is an effect with low heterogeneity. Generally, $\tau$ should be interpreted contextually within the field of studies, relative to how similar treatments or effects within that field vary. However, the same principle should also be true for the interpretation of Cohen's *d*, where too often the usual cutoffs are mindlessly used to interpret it.
+
 
 
 
