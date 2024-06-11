@@ -220,7 +220,7 @@ footer-hover-col: "#0085A1"
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
 # _config.yml
-staticman_url: https://Staticmanfdatri/v3/entry/github/fdatri/fdatri.github.io/<branch>/comments
+staticman_url: https://fluidman.herokuapp.com/v3/entry/github/fdatri/fdatri.github.io/main/comments
 staticman:
   repository: "fdatri/fdatri.github.io"  # GitHub username/repository
   branch: "main"  # Ensure this matches the branch you're using, typically 'main' or 'master'
