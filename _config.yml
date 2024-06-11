@@ -224,7 +224,8 @@ staticman_url: https://Staticmanfdatri/v3/entry/github/fdatri/fdatri.github.io/<
 staticman:
   repository: "fdatri/fdatri.github.io"  # GitHub username/repository
   branch: "main"  # Ensure this matches the branch you're using, typically 'main' or 'master'
-  endpoint: "https://api.staticman.net/v3/entry/github/"  # The default Staticman endpoint
+  endpoint: "https://fluidman.herokuapp.com/v3/entry/github/"
+  # The default Staticman endpoint
   reCaptcha:   # Optional, only if you're using reCaptcha for spam protection
   siteKey: ""  # Your reCaptcha site key (if applicable)
   secret: "" 
