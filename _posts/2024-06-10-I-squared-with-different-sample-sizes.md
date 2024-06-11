@@ -49,7 +49,7 @@ We make the sample size of each study, **$n$**, vary from 5 to 10,000, while cal
 I2 <- function(v, tau2) {
   wi <- 1 / v
   m <- length(v)  
-  v_tilde <- ((m-1) * sum(wi)) / (sum(wi)^2 - sum(wi^2))  # Calculate estimated sampling variance
+  v_tilde <- ((m-1) * sum(wi)) / (sum(wi)^2 - sum(wi^2))  # Calculate estimated variance due to sampling error
   return(100 * (tau2 / (tau2 + v_tilde)))  
 }
 
@@ -60,7 +60,7 @@ I2_data <- data.frame(n = integer(), m = integer(), I2 = numeric())
 for (n in seq(5, 10000, by = 5)) {
   m <- floor(N / n)  
   d_values <- rnorm(m, mean = mu_d, sd = tau)  
-  var_d_values <- 1 / n + d_values^2 / (2 * n)  # Calculate variance for each study
+  var_d_values <- 1 / n + d_values^2 / (2 * n)  # Calculate sampling error variance for each study
   I2_value <- I2(var_d_values, tau_squared)  
   I2_data <- rbind(I2_data, data.frame(n = n, m = m, I2 = I2_value)) 
 }
