@@ -251,7 +251,17 @@ footer-hover-col: "#0085A1"
 #  reactions-enabled: 1
 #  emit-metadata: 0
 #  theme: light
-
+comments:
+  giscus:
+    enabled: true
+    repo: "fdatri/fdatri.github.io"
+    repo_id: "R_kgDOMGZjTQ"
+    category: "General"
+    category_id: "DIC_kwDOMGZjTc4CgCCL"
+    mapping: "pathname"
+    reactions_enabled: "1"
+    theme: "preferred_color_scheme"
+    lang: "it"
 ################
 # --- Misc --- #
 ################
