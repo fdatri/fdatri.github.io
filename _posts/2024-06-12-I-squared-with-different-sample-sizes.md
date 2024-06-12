@@ -8,7 +8,7 @@ author: Federico D'Atri
 ---
 {%- include mathjax.html -%}
 
-The **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity ([metafor-project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate)):  
+In meta-analysis, the **$I^2$** statistic is often misunderstood as an absolute measure of heterogeneity; for example, values over 75% are usually interpreted as evidence of high heterogeneity in the set of studies being analyzed. However, this index just reflects the ratio between the estimated variance of the true effects **$\tilde{\tau}^2$** and the total observed variance, which includes the estimated sampling variance **$\tilde{v}$** plus **$\tilde{\tau}^2$**, thus making it a relative measure of heterogeneity ([metafor-project](https://metafor-project.org/doku.php/tips:i2_multilevel_multivariate)):  
 
 
 $$
@@ -85,7 +85,7 @@ If, instead of estimating the correlation between *treatment* and *control* for 
 <img src="https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20true%20cor.png?raw=true" alt="I² Formula True Correlation">
 
 
-Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is being overestimated at $0.16$, I suspect that the $\textit{Var}(d)$ formula I used is biased for small samples and, in this instance, is underestimating the sampling variance. Perhaps someone can suggest why this happens in the comments.
+Since for $n = 25$ the estimate for $d$ is very close to $1$, but $\tau^2$ is being overestimated at $0.16$, I suspect that the $\textit{Var}(d)$ formula we used is biased for small samples and, in this instance, is underestimating the sampling variance. Perhaps someone can suggest why this happens in the comments.
 
 
 ## Conclusions: Interpreting Heterogeneity
