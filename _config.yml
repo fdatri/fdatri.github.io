@@ -220,15 +220,15 @@ footer-hover-col: "#0085A1"
 # instructions. For any support with staticman please direct questions to staticman and 
 # not to BeautifulJekyll.
 # _config.yml
-staticman_url: https://fluidman.herokuapp.com/v3/entry/github/fdatri/fdatri.github.io/main/comments
-staticman:
-  repository: "fdatri/fdatri.github.io"
-  branch: "main"
-  endpoint: "https://fluidman.herokuapp.com/v3/entry/github/"
+#staticman_url: https://fluidman.herokuapp.com/v3/entry/github/fdatri/fdatri.github.io/main/comments
+#staticman:
+ #repository: "fdatri/fdatri.github.io"
+  #branch: "main"
+  #endpoint: "https://fluidman.herokuapp.com/v3/entry/github/"
   # The default Staticman endpoint
-  reCaptcha:   # Optional, only if you're using reCaptcha for spam protection
-  siteKey: ""  # Your reCaptcha site key (if applicable)
-  secret: "" 
+  #reCaptcha:   # Optional, only if you're using reCaptcha for spam protection
+  #siteKey: ""  # Your reCaptcha site key (if applicable)
+  #secret: "" 
 #  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
 #  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
 #  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
