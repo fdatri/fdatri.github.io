@@ -82,22 +82,25 @@ layout: base
         </li>
         {% endif %}
       </ul>
+
       {% include comments.html %}
+
+      {% if site.comments.giscus.enabled %}
+      <script src="https://giscus.app/client.js"
+              data-repo="{{ site.comments.giscus.repo }}"
+              data-repo-id="{{ site.comments.giscus.repo_id }}"
+              data-category="{{ site.comments.giscus.category }}"
+              data-category-id="{{ site.comments.giscus.category_id }}"
+              data-mapping="{{ site.comments.giscus.mapping }}"
+              data-strict="0"
+              data-reactions-enabled="{{ site.comments.giscus.reactions_enabled }}"
+              data-emit-metadata="0"
+              data-input-position="bottom"
+              data-theme="{{ site.comments.giscus.theme }}"
+              data-lang="{{ site.comments.giscus.lang }}"
+              crossorigin="anonymous"
+              async>
+      </script>
+      <noscript>Please enable JavaScript to view the comments.</noscript>
+      {% endif %}
     </div>
-  </div>
-</main>
-#Giscus script
-<script src="https://giscus.app/client.js"
-        data-repo="fdatri/fdatri.github.io"
-        data-repo-id="R_kgDOMGZjTQ"
-        data-category-id="DIC_kwDOMGZjTc4CgCCL"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="it"
-        crossorigin="anonymous"
-        async>
-</script>
