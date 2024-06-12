@@ -256,7 +256,7 @@ comments:
     enabled: true
     repo: "fdatri/fdatri.github.io"
     repo_id: "R_kgDOMGZjTQ"
-    category: "General"
+    category: "Announcements"
     category_id: "DIC_kwDOMGZjTc4CgCCL"
     mapping: "pathname"
     reactions_enabled: "1"
