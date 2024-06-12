@@ -76,7 +76,7 @@ Following an approach where data are simulated for each subject, and for each sa
 
 <img src="https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20formula%20vs.%20simulation%20plot.png?raw=true" alt="I² Formula vs. Simulation Plot">
 
-*yellow dots represent I² values obtained through simulation for different sample sizes ranging from 25 to 10,000.*
+*Yellow dots represent I² values obtained through simulation for different sample sizes ranging from 25 to 10,000.*
 
 
 Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25$ (first yellow dot on the left), but apart from this, the two values look very close. [Here](https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/simulation_I_squared.R) you can find the full code for this simulation.  
