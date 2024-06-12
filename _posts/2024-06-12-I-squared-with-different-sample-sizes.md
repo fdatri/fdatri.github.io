@@ -22,7 +22,7 @@ As explained by Borenstein (2020), the definition of **$I^2$** implies that effe
 
 
 ## Sample Scenario
-The setting we'll be using is the following: a treatment with true effects, measured in terms of the standardized difference between *treatment* and *control* (*Cohen's d*), following a distribution with mean  $1$ and  standard deviation $0.1$. The total number of subjects, **$N$** will be kept almost constant, in particular in our setup, we will use 200,000 subjects:  
+The setting we'll be using is the following: a treatment with true effects, measured in terms of the standardized difference between *treatment* and *control* (*Cohen's d*), following a nromal distribution with mean  $1$ and  standard deviation $0.1$. The total number of subjects, **$N$** will be kept almost constant, in particular in our setup, we will use 200,000 subjects:  
 ```r
 # Setting parameters
 N <- 200000
@@ -76,7 +76,7 @@ Following an approach where data are simulated for each subject, and for each sa
 
 <img src="https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/I2%20formula%20vs.%20simulation%20plot.png?raw=true" alt="I² Formula vs. Simulation Plot">
 
-*Yellow dots represent I² values obtained through simulation for different sample sizes ranging from 25 to 10,000.*
+*YeLLow dots represent I² values obtained through simulation for different sample sizes ranging from 25 to 10,000.*
 
 
 Interestingly, the value obtained via simulation and model fitting seem to overestimate $I^2$ for $n = 25$ (first yellow dot on the left), but apart from this, the two values look very close. [Here](https://github.com/fdatri/Blog-Material/blob/main/I2-and-sample-size/simulation_I_squared.R) you can find the full code for this simulation.  
